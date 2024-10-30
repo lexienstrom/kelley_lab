@@ -14,7 +14,7 @@ git remote set-url origin https://{personal-access-token}@github.com/lexienstrom
 
 `ssh aenstrom@hb.ucsc.edu`
 
-`cd /hb/groups/kelley_lab/lexi`
+`cd /hb/groups/kelley_training/lexi`
 
 - running jobs: [tutorial](https://hummingbird.ucsc.edu/documentation/creating-scripts-to-run-jobs/)
 - data transfer: `ssh aenstrom@hbfeeder.ucsc.edu`
