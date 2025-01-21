@@ -46,7 +46,9 @@ git remote set-url origin https://{personal-access-token}@github.com/lexienstrom
 ### Conda Environments
 ## Making a conda environment
 
-`# To create an environment:
+
+~~~
+# To create an environment:
 conda create --name <my-env>
 
 # To create an environment with a specific version of Python:
@@ -56,7 +58,8 @@ conda create -n myenv python=3.9
 conda env create -f environment.yml
 
 # Verify that the new environment was installed correctly:
-conda env list`
+conda env list
+~~~
 
 ## Installing software with conda:
 
