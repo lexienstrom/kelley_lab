@@ -43,7 +43,22 @@ git remote set-url origin https://{personal-access-token}@github.com/lexienstrom
 
 `module load agat`
 
-### Installing software with conda:
+### Conda Environments
+## Making a conda environment
+
+`# To create an environment:
+conda create --name <my-env>
+
+# To create an environment with a specific version of Python:
+conda create -n myenv python=3.9
+
+# Create the environment from the environment.yml file
+conda env create -f environment.yml
+
+# Verify that the new environment was installed correctly:
+conda env list`
+
+## Installing software with conda:
 
 `conda install -c bioconda orthofinder`
 - orthofinder conda package came with the wrong version of diamond, so manually installed diamond and replaced the executable in the conda env directory
