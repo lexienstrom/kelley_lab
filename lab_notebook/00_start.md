@@ -2,7 +2,7 @@
 
 [Markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 
-Configure remote git repo (in home directory /hb/home/aanakamo): 
+Configure remote git repo (in home directory /hb/home/aenstrom): 
 ~~~
 git clone https://github.com/lexienstrom/kelley_lab.git
 git config user.name "lexienstrom"
@@ -43,7 +43,7 @@ git remote set-url origin https://{personal-access-token}@github.com/lexienstrom
 
 `module load agat`
 
-### Conda Environments
+# Conda Environments
 ## Making a conda environment
 
 
@@ -69,7 +69,7 @@ conda env list
 ~~~
 wget http://github.com/bbuchfink/diamond/releases/download/v2.1.8/diamond-linux64.tar.gz
 tar xzf diamond-linux64.tar.gz
-cp diamond /hb/home/aanakamo/.conda/envs/orthofinder/bin/
+cp diamond /hb/home/aenstrom/.conda/envs/orthofinder/bin/
 ~~~
 
 `conda install -c conda-forge ncbi-datasets-cli`
@@ -81,7 +81,7 @@ cp diamond /hb/home/aanakamo/.conda/envs/orthofinder/bin/
 `conda install -c bioconda agat` (GFF/GTF tools)
 
 ### Installing other software to home directory
-dir: /hb/home/aanakamo/bin
+dir: /hb/home/aenstrom/bin
 
 seqtoolkit
 ~~~
