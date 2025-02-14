@@ -88,3 +88,18 @@ seqtoolkit
 wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/3.0.7/sratoolkit.3.0.7-ubuntu64.tar.gz
 tar xzf sratoolkit.3.0.7-ubuntu64.tar.gz
 ~~~
+
+# GitHub 
+## Initialize Git inside your folder
+```bash
+cd /path/to/directory
+git init
+git clone git@github.com:your-username/bear_phylogenetics.git
+cd repository
+```
+## commit and push your files:
+```bash
+git add .
+git commit -m "Initial commit"
+git push -u origin main
+```
