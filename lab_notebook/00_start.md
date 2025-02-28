@@ -22,22 +22,17 @@ git remote set-url origin https://{personal-access-token}@github.com/lexienstrom
         - To transfer file from home directory on personal computer to Hummingbird
             - `put filename`
 - interactive job:
-    ~~~
-    salloc --partition=128x24 --time=02:00:00 --mem=10G --ntasks=1 --cpus-per-task=1
-    export | grep SLURM
+    ```bash
+    salloc --partition=128x24 --time=02:00:00 --mem=1G --ntasks=1 --cpus-per-task=1
     ssh $SLURM_NODELIST
     # run stuff
     exit
     exit
-    ~~~
-- show the configuration of each partition: `scontrol show partition`
-- show which partitions I have access to: `sacctmgr show User lexienstrom --associations`
-- show metadata of completed jobs, including time and mem usage: `sacct  --format JobID,jobname,NTasks,nodelist,MaxRSS,MaxVMSize,AveRSS,AveVMSize,Elapsed`
-
-
+    ```
+    
 ### Loading modules:
 
-`module load miniconda3.9`
+`module load miniconda3`
 
 `module load fastqc`
 
@@ -47,7 +42,6 @@ git remote set-url origin https://{personal-access-token}@github.com/lexienstrom
 
 # Conda Environments
 ## Making a conda environment
-
 
 ~~~
 # To create an environment:
