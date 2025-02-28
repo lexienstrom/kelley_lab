@@ -17,8 +17,10 @@ git remote set-url origin https://{personal-access-token}@github.com/lexienstrom
 `cd /hb/groups/kelley_training/lexi`
 
 - running jobs: [tutorial](https://hummingbird.ucsc.edu/documentation/creating-scripts-to-run-jobs/)
-- data transfer: `sftp aenstrom@hb.ucsc.edu`
-    - put filename
+- data transfer:
+    - type in terminal on personal computer `sftp aenstrom@hb.ucsc.edu`
+        - To transfer file from home directory on personal computer to Hummingbird
+            - `put filename`
 - interactive job:
     ~~~
     salloc --partition=128x24 --time=02:00:00 --mem=10G --ntasks=1 --cpus-per-task=1
