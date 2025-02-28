@@ -17,6 +17,22 @@ git remote set-url origin https://{personal-access-token}@github.com/lexienstrom
 `cd /hb/groups/kelley_training/lexi`
 
 - running jobs: [tutorial](https://hummingbird.ucsc.edu/documentation/creating-scripts-to-run-jobs/)
+    - SLURM template for #SBATCH directives
+    ```bash
+    #!/bin/bash
+
+    #SBATCH --job-name=JOB_NAME    # Job name
+    #SBATCH --partition=128x24
+    #SBATCH --mail-type=ALL               # Mail events (NONE, BEGIN, END, FAIL, ALL)
+    #SBATCH --mail-user=aenstrom@ucsc.edu   # Where to send mail	
+    #SBATCH --nodes=1                    # Use one node
+    #SBATCH --ntasks=1                    # Run a single task 
+    #SBATCH --cpus-per-task=1           # Number of CPU cores per task
+    #SBATCH --time=24:00:00               # Time limit hrs:min:sec (you may not want this)
+    #SBATCH --output=./logs/job_%j.out    # Standard output and error log
+    #SBATCH --error=./logs/job_%j.err     # Standard output and error log
+    #SBATCH --mem=1G                    # Allocate memory for the job.
+    ``` 
 - data transfer:
     - type in terminal on personal computer `sftp aenstrom@hb.ucsc.edu`
         - To transfer file from home directory on personal computer to Hummingbird
