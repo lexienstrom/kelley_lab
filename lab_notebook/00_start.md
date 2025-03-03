@@ -33,10 +33,6 @@ git remote set-url origin https://{personal-access-token}@github.com/lexienstrom
     #SBATCH --error=./logs/job_%j.err     # Standard output and error log
     #SBATCH --mem=1G                    # Allocate memory for the job.
     ``` 
-- data transfer:
-    - type in terminal on personal computer `sftp aenstrom@hb.ucsc.edu`
-        - To transfer file from home directory on personal computer to Hummingbird
-            - `put filename`
 - interactive job:
     ```bash
     salloc --partition=128x24 --time=02:00:00 --mem=1G --ntasks=1 --cpus-per-task=1
@@ -45,7 +41,12 @@ git remote set-url origin https://{personal-access-token}@github.com/lexienstrom
     exit
     exit
     ```
-    
+- data transfer:
+    - type in terminal on personal computer `sftp aenstrom@hb.ucsc.edu`
+        - To transfer file from home directory on personal computer to Hummingbird
+            - `put filename` or `get filename`
+            - `get -r folder_name`
+              
 ### Loading modules:
 
 `module load miniconda3`
