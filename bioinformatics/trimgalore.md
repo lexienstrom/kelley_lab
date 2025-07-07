@@ -1,7 +1,10 @@
 # Trimgalore
 
-## I used trimgalore to..
+## Purpose
+```bash
+trimgalore kskcc
+```
 
-## Trimgalore works by ...
+## Function
 
-## This is how I used trimgalore ...
+## Usage
