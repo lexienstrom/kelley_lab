@@ -1,2 +1,6 @@
 # Trimgalore
 I used trimgalore to..
+
+trimgalore works by ...
+
+This is how I used trimgalore ...
