@@ -1,10 +1,10 @@
 # Trimgalore
 
 ## Purpose
-```bash
-trimgalore kskcc
-```
 
 ## Function
 
 ## Usage
+```bash
+trimgalore kskcc
+```
